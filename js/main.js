@@ -1,3 +1,6 @@
+//created by Shane A.Proverbs with comments to help anyone who is trying to learn.
+
+
 fetch("https://rickandmortyapi.com/api/character") //fetches the data from uri and returns a promise which allows us to add the .then()
 	.then((response) => response.json()) //returns the data and transform it into a javascript object, it then return it in the next 'then' function
 	.then((data) => display(data.results)); //calls the display function on line 10 and passes the [{},{},{}] array of objects to it
