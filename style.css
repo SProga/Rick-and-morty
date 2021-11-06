@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body,
+html {
+	height: 100%;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #000000;
+	background-image: linear-gradient(#00000088, #00000088),
+		url(https://gifdownload.net/wp-content/uploads/2020/03/rick-and-morty-portal-gif-3.gif);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position-x: 600px;
+	background-repeat: no-repeat;
+	font-family: "Dongle", sans-serif;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 10px;
+	justify-content: center;
+}
+/* .card {
+	display: flex;
+	flex: 0 0 40%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgba(194, 204, 211, 0.774);
+	min-width: 36rem;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid transparent;
+} */
+.card {
+	display: flex;
+	flex: 0 0 40%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgba(72, 73, 75, 0.89);
+	min-width: 36rem;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid transparent;
+	color: #fff;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+	border: 2px solid greenyellow;
+}
+.card:hover img {
+	transform: scale(1.1);
+}
+.card img {
+	width: 40%;
+	display: block;
+	transition: all 0.3s ease-in-out;
+}
+
+.alive {
+	background-color: rgb(8, 211, 8) !important;
+}
+.dead {
+	background-color: rgb(255, 24, 24) !important;
+}
+.card_description {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+}
+.card_title {
+	font-size: 3.4rem;
+	text-transform: capitalize;
+}
+.card_status,
+.card_location,
+.card_description p {
+	font-size: 2.3rem;
+}
+.status {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: black;
+	vertical-align: middle;
+	margin-right: 10px;
+	-webkit-animation: pulse 2s ease-in infinite forwards;
+	animation: pulse 2s ease-in infinite forwards;
+}
+.color {
+	color: rgb(235, 155, 192);
+	font-weight: 600;
+	font-size: 2.3rem;
+}
+.symbol {
+	font-size: 1.3rem;
+	vertical-align: middle;
+}
+@-webkit-keyframes pulse {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
