@@ -1,1 +1,2 @@
-In the file are comments to help explain how it works go to comments.js
+
+messing around with a free Restapi, with one of my favourite shows...Rick and Morty
