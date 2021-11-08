@@ -89,6 +89,7 @@ ul li {
 	display: flex;
 	flex-direction: column;
 	padding-left: 2rem;
+	width: 100%;
 }
 .card_title {
 	font-size: 3.4rem;
@@ -140,5 +141,22 @@ ul li {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 81.25em) {
+	.card {
+		height: 20vh;
+		overflow-y: scroll;
+	}
+}
+
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 55.5%;
+	}
+
+	.card {
+		height: 15rem;
 	}
 }
