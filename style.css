@@ -147,6 +147,8 @@ ul li {
 @media only screen and (max-width: 81.25em) {
 	.card {
 		height: 20vh;
+	}
+	.card_description {
 		overflow-y: scroll;
 	}
 }
@@ -158,5 +160,8 @@ ul li {
 
 	.card {
 		height: 15rem;
+	}
+	.card img {
+		height: 100%;
 	}
 }
